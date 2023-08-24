@@ -37,7 +37,7 @@ body *{
     line-height: 1.2;
     font-weight: 700;
     background: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
-    /* background-clip: text;  */
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
