@@ -1,0 +1,117 @@
+@import url(./reset.css);
+@import url(../fonts/stylesheet.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dialog-layer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(50, 50, 100, 0.7);
+    z-index: 10;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #F5F5FA;
+    box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.50);
+}
+
+.form-title {
+    margin-bottom: 30px;
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 700;
+    background: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
+    /* background-clip: text;  */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    font-size: 16px;
+    color: #B3B3BA;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    color: #B3B3BA;
+}
+
+.message {
+    display: block;
+    width: 100%;
+    height: 130px;
+    overflow: auto;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    font-size: 16px;
+    color: #B3B3BA;
+}
+
+.message::placeholder {
+    font-size: 16px;
+    color: #B3B3BA;
+}
+
+.legend {
+    color: #B3B3BA;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.button-send {
+    width: 100%;
+    padding: 18px 30px;
+    border-radius: 12px;
+    background-color: #24A3FF;
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-image: url('../images/Close.png');
+}
+
+.button-close:hover {
+    background-image: url('../images/Close-hover.png');
+}
