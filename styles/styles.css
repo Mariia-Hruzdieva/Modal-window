@@ -42,7 +42,7 @@ body *{
     -webkit-text-fill-color: transparent;
 }
 
-.input {
+.form-content {
     display: block;
     width: 100%;
     padding: 15px;
@@ -57,28 +57,16 @@ body *{
     margin-bottom: 15px;
 }
 
-.input::placeholder {
+.form-content::placeholder {
     font-size: 16px;
     color: #B3B3BA;
 }
 
 .message {
-    display: block;
-    width: 100%;
     height: 130px;
     overflow: auto;
     padding: 15px;
     margin-bottom: 30px;
-    border-radius: 8px;
-    border: 1px solid #FFF;
-    background: #FFF;
-    font-size: 16px;
-    color: #B3B3BA;
-}
-
-.message::placeholder {
-    font-size: 16px;
-    color: #B3B3BA;
 }
 
 .legend {
@@ -91,6 +79,7 @@ body *{
 }
 
 .button-send {
+    margin-top: 30px;
     width: 100%;
     padding: 18px 30px;
     border-radius: 12px;
